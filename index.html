@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Principate Emperors</title>
+
+        <!-- links for bootstrap and CSS files -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+
+        <!-- Navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <a class="navbar-brand" href="#">Choose your era</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="Claudian.html">Years 27 BC-68 AD</a>
+                <a class="nav-item nav-link" href="Flavian.html">Years 68-96</a>
+                <a class="nav-item nav-link" href="Nerva.html">Years 96-192</a>
+                <a class="nav-item nav-link" href="Severan.html">Years 193-235</a>
+                <a class="nav-item nav-link" href="Gordian.html">Years 235-285</a>
+            </div>
+            </div>
+        </nav>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+            @media (min-width: 500px) {
+                h1::before {
+                    content: "List of the ";
+                }
+             }
+            @media (max-width: 499px) {
+                h1::before {
+                    content: "";
+                }
+              }
+            }
+        </style>
+         <!-- Display title, actual title depends on screen size  -->
+         <div>
+            <h1 id= "mainTitle">Principate Roman emperors:</h1>
+            <p>Here is a list of the Roman emperors during the Principate era, from 27 BC to 285. 
+                </br>Use the navigation bar at the top of this page to get more information about each emperor and their dynasties
+                <br>or click on the list to directly go to the era of your choice.</p>
+        </div>
+
+
+        <!-- List of all the roman empoerors-->
+        <ul>
+            <li class="index-eras"><a href="Claudian.html">27 BC–68 AD: Julio-Claudian dynasty</a></li>
+                <ol>
+                    <li>Augustus</li> 
+                    <li>Tiberius</li> 
+                    <li>Caligula</li> 
+                    <li>Claudius</li> 
+                    <li>Nero</li> 
+                </ol>
+            <li class="index-eras"><a href="Flavian.html">68–96: Year of the Four Emperors and Flavian dynasty</a></li>
+                <ol>
+                    <li>Galba</li> 
+                    <li>Otho</li> 
+                    <li>Vitellius</li> 
+                    <li>Vespasian</li> 
+                    <li>Titus</li> 
+                    <li>Domitian</li> 
+                </ol>
+            <li class="index-eras"><a href="Nerva.html">96–192: Nerva–Antonine dynasty</a></li>
+                <ol>
+                    <li>Nerva</li> 
+                    <li>Trajan</li> 
+                    <li>Hadrian</li> 
+                    <li>Antoninus Pius</li> 
+                    <li>Lucius Verus</li> 
+                    <li>Marcus Aurelius</li> 
+                    <li>Commodus</li> 
+                </ol>
+            <li class="index-eras"><a href="Severan.html">193–235: Year of the Five Emperors and Severan dynasty</a></li>
+                 <ol>
+                    <li>Pertinax</li> 
+                    <li>Didius Julianus</li> 
+                    <li>Septimius Severus</li> 
+                    <li>Caracalla</li> 
+                    <li>Geta</li> 
+                    <li>Macrinus & Diadumenian</li> 
+                    <li>Elagabalus</li> 
+                    <li>Severus Alexander</li> 
+                </ol>
+            <li class="index-eras"><a href="Gordian.html">235–285: Gordian dynasty and Crisis of the Third Century</a></li>
+                <ol>
+                    <li>Maximinus Thrax</li>
+                    <li>Gordian I</li>
+                    <li>Gordian II</li>
+                    <li>Pupenius</li>
+                    <li>Balbinus</li>
+                    <li>Gordian III</li>
+                    <li>Philip the Arab</li>
+                    <li>Decius & Herrenius Etruscus</li>
+                    <li>Hostilian</li>
+                    <li>Trebonianus Gallus</li>
+                    <li>Aemilian</li>
+                    <li>Valerian</li>
+                    <li>Gallienus & Salonius</li>
+                    <li>Claudius Gothicus</li>
+                    <li>Quintillus</li>
+                    <li>Aurelian</li>
+                    <li>Tacitus</li>
+                    <li>Florianus</li>
+                    <li>Probus</li>
+                    <li>Carus</li>
+                    <li>Carinus</li>
+                    <li>Numerian</li>
+                </ol>
+       </ul>
+
+       <p id="Copyright">This website has been developped by Aurian Nogues for Project0, HarvardX CS50's web programming with Python and Javascript.</p>
+
+                <!-- Leave at the end of body, Javascript scripts used to run some bootstrap functions -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+<!--<a href="#section1"></a>-->
