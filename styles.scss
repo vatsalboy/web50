@@ -1,0 +1,134 @@
+//set all the variables
+$BaseColor:#484b4f;
+$backgroundColor: #edeeef;
+$fonts: Helvetica, sans-serif;
+$NavbarColor: #d4d7dd;
+$TableLineColorExt: black;
+$TableLineColorInt: #595757;
+
+//Display hyperlinks like normal text and not in blue
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+//Assign variables to the various elements of the page
+
+body {
+    background-color: $backgroundColor;
+}
+
+//Use .class to assign properties to Navbar
+.navbar{
+    background-color: $NavbarColor;
+    font-family: $fonts;
+}
+
+//Use inheritance to style elements of the website
+%text{
+     font-family: $fonts;
+     color: $BaseColor;
+}
+    
+h1 {
+    @extend %text;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+p {
+    @extend %text;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+//Use class to format first level of index list
+.index-eras{
+    @extend %text;
+    font-size: 22px;
+}
+
+h4.succession-legend{
+    @extend %text;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+h6.succession-legend{
+    @extend %text;
+    font-size: 14px;
+
+
+}
+
+h1.era-titles{
+    @extend %text;
+    font-size: 28px;
+    margin-top: 30px;
+    text-align: center; 
+    font-weight: bold;
+
+}
+h2.era-titles{
+    @extend %text;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+//Use selector to format second level of list
+ul >ol {
+    @extend %text;
+    font-size: 16px;
+}
+
+#Copyright{
+    @extend %text;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+
+//Format tables
+
+ table {
+        margin-top: 25px;
+        border: 2px solid $TableLineColorExt;
+        border-collapse: collapse;
+        width: 100%;
+
+        th {
+            border: 2px solid $TableLineColorExt;
+            background-color: #b2b2b2;
+            @extend %text;
+            font-size: 16px;
+            text-align: center; 
+            vertical-align: middle;
+        }
+
+        td {
+            border: 1px solid $TableLineColorInt;
+            @extend %text;
+            font-size: 12px;
+            text-align: left; 
+            vertical-align: middle;
+        }
+
+    }
+
+.portrait{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mainTitle{
+    @media (max-width: 499px){
+        font-size: 25px;
+    }
+    @media (min-width: 500px){
+        font-size: 45px;
+    }
+}
